@@ -110,7 +110,7 @@ body{
 .numbers-symbols0{
     width: 4rem;
     font-family: 'Roboto',sans-serif;
-    height: 2.5rem;
+    height: 4rem;
     padding-top: 1rem;
     border-radius: 0.5rem;
     margin: 1rem 0 0 .8rem;
@@ -125,6 +125,7 @@ body{
     height: 4rem;
     width: 18rem;
     color: rgb(252, 195, 175);
+    font-family: 'Roboto',sans-serif;
     /* background-color: white; */
     overflow: hidden;
     margin: 8rem 0 0 0;
@@ -135,10 +136,126 @@ body{
     position: absolute;
     height: 4rem;
     width: 18rem;
-    color: rgb(247, 93, 37);
-    /* background-color: white; */
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto',sans-serif;
     overflow: hidden;
     margin: 11rem 0 0 0;
     text-align: right;
     font-size: 50px;
+}
+.symbol-color{
+    color: orangered;
+}
+.background-animation{
+    animation: bgGlow ;
+    animation-duration: .2s;
+}
+@keyframes bgGlow{
+    100%{
+        background-color: transparent;
+    }
+    0%{
+        background-color:rgb(86, 82, 82);
+    }
+}
+@media (max-width : 768px) {
+    .background{
+        height: 216rem;
+    }
+    .app-bg{
+        margin: 25rem 0 0 0rem;
+        height: 160rem;
+        width: 80rem;
+        border-radius: 150px;
+    }
+    .app-inside-bg{
+        margin: 75rem 0 0 0rem;
+        border-radius: 150px;
+        height: 85rem;
+        width: 80rem;
+    }
+    .theme-button{
+        margin: 6rem 0 0 28rem;
+        border-radius: 4rem;
+        height: 9rem;
+        width: 25rem;
+    }
+    .sun-icon{
+        height: 2rem;
+        width: 2rem;
+        scale: 7;
+        margin: 5rem 0 0 10rem;
+    }
+    .moon-icon{
+        height: 2rem;
+        width: 2rem;
+        scale: 6.5;
+        margin: 1.8rem 0 0 21rem;
+    }
+    .output{
+        height: 10rem;
+        width: 75rem;
+        margin: 55rem 0 0 0rem;
+        font-size: 150px;
+    }
+    .total-output{
+        height: 10rem;
+        width: 75rem;
+        margin: 65rem 0 0 0rem;
+        font-size: 100px;
+    }
+    .numbers-symbols{
+        width: 10rem;
+        height: 9rem;
+        margin:3rem 0rem 0rem 8rem;
+        border-radius: 50px;
+        font-size: 100px;
+    }
+    .numbers-symbols0{
+        width: 10rem;
+        height: 9rem;
+        margin: 5rem 0 0 8rem;
+        border-radius: 50px;
+        font-size: 100px;
+    }
+    .components{
+        height: 18rem;
+        display: flex;
+        flex-direction: row;
+        width: 80rem;
+        color: #27bca4;
+    }
+
+    .components2{
+        height: 15rem;
+        color: #f9f9f9;
+        display: flex;
+        flex-direction: row;
+        width: 80rem;
+    }
+    .components3{
+        height: 15rem;
+        margin-top: 2rem;
+        color: #f9f9f9;
+        display: flex;
+        flex-direction: row;
+        width: 80rem;
+    }
+    .components4{
+        height: 15rem;
+        color: #f9f9f9;
+        display: flex;
+        flex-direction: row;
+        width: 80rem;
+        margin-top: 2rem;
+    }
+    .components5{
+        height: 15rem;
+        color: #f9f9f9;
+        display: flex;
+        flex-direction: row;
+        width: 80rem;
+        margin-top: 1rem;
+    }
+    
 }

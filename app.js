@@ -6,14 +6,12 @@ const finalExpression = document.querySelector('.total-output')
 const topSymbols  = document.querySelectorAll('.numbers-symbols0')
 let array = []
 let symbolArray = []
-// let total = 0
-// let num = 1
 
 Sun.addEventListener('click' , ()=> {
     document.querySelector('.app-bg').classList.add('top-bg-color')
     document.querySelector('.theme-button').classList.add('bottom-bg-color')
     document.querySelector('.app-inside-bg').classList.add('bottom-bg-color')
-    
+    finalExpression.style.color = 'black'
     number.forEach((e) => {
         e.classList.add('ns-bg-light')
     })
@@ -32,27 +30,13 @@ for (let i = 0; i < number.length; i++) {
 for (let i = 0; i < topSymbols.length; i++) {
         symbolArray[i] = topSymbols[i]
 }
-// console.log(array);
-// console.log(symbolArray);
-
-// function calcualation(string) {
-//     let list = []
-//     let total = 0
-//     for(i=0;i<=string.length;i++){
-//         if(string[i] == 1 || string[i] == 2 || string[i] == 3 || string[i] == 4 || string[i] == 5 || string[i] == 6){
-//             list[i] = string[i]
-//             string[i].pop
-//         }else if(string[i] == '+'){
-//             total = list[i] + string[i+1]
-//             i+=2
-//         }
-//     }
-// }
-
-
 
 array.forEach((e) => {
     e.addEventListener('click', () => {
+        e.classList.add('background-animation')
+        setTimeout(() => {
+            e.classList.remove('background-animation')
+        }, 200);
         // if(e.innerText !== '+' || e.innerText !== '-' || e.innerText !== '/' || e.innerText !== '*'){
             if(output.innerText.length < 11){
                 if(output.innerText == 0){
@@ -109,12 +93,14 @@ array.forEach((e) => {
                     output.innerText = ''
                 }
             }
-         
         })
     })
-
-    symbolArray.forEach((es) => {
+symbolArray.forEach((es) => {
         es.addEventListener('click', () => {
+            es.classList.add('background-animation')
+        setTimeout(() => {
+            es.classList.remove('background-animation')
+        }, 200);
             if(output.innerText.length < 12){
                 if(output.innerText == 0){
                     if(es.innerText == 'AC'){console.log('AC clicked    ');
@@ -137,7 +123,6 @@ array.forEach((e) => {
                     }
                 }
                 else if(es.innerText == 'AC'){
-                    // console.log('hello');
                     finalExpression.innerText ='='
                     output.innerText = ''
                 }
@@ -150,88 +135,9 @@ array.forEach((e) => {
                 }
                 else if(es.innerText == '^'){
                     output.innerText += '**'
-    
                 }
             }
              })})
     array[12].addEventListener('click',() => {
         output.innerText = output.innerText.slice(0,-1)
-        // num = 0
-        // total = 0
-    })       // if(output.innerText[num] === '+') {
-        //     return}
-        // else{
-        // output.innerText = output.innerText + '+'
-        // // total += parseFloat(output.innerText)
-        // console.log(output.innerText);
-        // num += 1
-        // console.log(num);
-        // return
-        // if (e.innerText == '1') {
-        //     // num += 1
-        //     console.log(num);
-            
-        //     output.innerText = output.innerText + e.innerText
-        // }
-
-        // if(e.innerText !== '+' || e.innerText !== '-' || e.innerText !== '/' || e.innerText !== '*'){
-        //     // output.innerText = parseFloat(output.innerText) + parseFloat(e.innerText)
-        //     console.log(output.innerText);
-        // }
-    // if(e.innerText == '-'){
-    //     output.innerText = output.innerText + '-'
-    // }
-    // if(e.innerText == '*'){
-    //     output.innerText = output.innerText + '*'
-    // }
-    // if(e.innerText == '/'){
-    //     output.innerText = output.innerText + '/'
-    // }
-    // if(e.innerText == '='){
-    //     // output.innerText = output.innerText + '/'
-    //     // total = parseFloat(output.innerText);
-    //     console.log(total);
-    // }
-    // if(e.innerText == '1'){
-    //     output.innerText += parseFloat(e.innerText)
-    //     console.log(output.innerText);
-        
-    // }
-
-        // console.log(e.innerText);
-        // if(e.innerText == '+'){
-        //     // total = parseFloat(total) + parseFloat(num)
-        //     // output.innerText = output.innerText + '+' + num
-        //     total += num + '+' 
-        //     console.log(total);
-        //     output.innerText = total
-        // }
-        // else if(e.innerText !== '+' || e.innerText !== '-' || e.innerText !== '/' || e.innerText !== '*'){
-        //     num = e.innerText
-        //     output.innerText += '+' + e.innerText 
-        //     // output.innerText = output.innerText + e.innerText
-        //     // console.log(output.innerText);
-        //     // console.log(num);
-
-        // }
-        // else if(e.innerText == '&#x21bb;'){
-        //     output.innerText = ''
-        //     num = 0
-        //     total = 0
-        // }
-        
-        // console.log(total);
-        // if(e.innerText == '+'){
-        //     total = total + e.innerText
-        // }
-        // total = e.innerText
-        // console.log(total);
-        // if(e.innerText == '+'){
-        //     total += parseFloat(e.innerText)
-        // }
-
-
-// array[0].addEventListener('click' , ()=> {
-//     console.log(array[0]);
-// })
-
+    })  
