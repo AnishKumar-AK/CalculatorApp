@@ -1,0 +1,144 @@
+.main{
+    background-color: white;
+}
+body{
+    margin-top: 0;
+    /* overflow-y: hidden; */
+}
+.background{
+    width: 100rem;
+    height: 50rem;
+    background-color: #e7e7e7;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.app-bg{
+    margin: 4.5rem 0 0 0rem;
+    border-radius: 2rem;
+    position: absolute;
+    align-items: center;
+    height: 40rem;
+    width: 20rem;
+    background-color: #22252d;
+}
+.app-inside-bg{
+    margin: 15rem 0 0 0rem;
+    border-radius: 2rem;
+    position: absolute;
+    text-align: center;
+    height: 25rem;
+    width: 20rem;
+    cursor: grab;
+    background-color: #292d36;
+}
+.theme-button{
+    margin: 1.5rem 0 0 7rem;
+    border-radius: 2rem;
+    position: absolute;
+    height: 2rem;
+    width: 6rem;
+    background-color: #292d36;
+}
+.sun-icon{
+    height: 2rem;
+    position: absolute;
+    width: 2rem;
+    scale: 1.1;
+    margin: 0.3rem 0 0 1.4rem;
+    color: grey;
+}
+.moon-icon{
+    height: 2rem;
+    position: absolute;
+    width: 2rem;
+    scale: 1.1;
+    margin: -0.22rem 0 0 4rem;
+    rotate: -40deg;
+    color: white;
+}
+.top-bg-color{
+    background-color: white;
+}
+.bottom-bg-color{
+    background-color: #f9f9f9;
+}
+.components{
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    width: 20rem;
+    color: #27bca4;
+}
+.components2{
+    height: 5rem;
+    color: #f9f9f9;
+    display: flex;
+    flex-direction: row;
+    width: 20rem;
+}
+.components3{
+    height: 5rem;
+    color: #f9f9f9;
+    display: flex;
+    flex-direction: row;
+    width: 20rem;
+}
+.components4{
+    height: 5rem;
+    color: #f9f9f9;
+    display: flex;
+    flex-direction: row;
+    width: 20rem;
+}
+.components5{
+    display: flex;
+    color: #f9f9f9;
+    flex-direction: row;
+    width: 20rem;
+}
+.numbers-symbols{
+    width: 4rem;
+    font-family: 'Roboto',sans-serif;
+    height: 2.5rem;
+    padding-top: 1rem;
+    border-radius: 0.5rem;
+    margin: 1rem 0 0 .8rem;
+    font-size: 24px;
+}
+.numbers-symbols0{
+    width: 4rem;
+    font-family: 'Roboto',sans-serif;
+    height: 2.5rem;
+    padding-top: 1rem;
+    border-radius: 0.5rem;
+    margin: 1rem 0 0 .8rem;
+    font-size: 24px;
+}
+.ns-bg-light{
+    /* background-color: rgb(201, 196, 196); */
+    color: grey;
+}
+.output{
+    position: absolute;
+    height: 4rem;
+    width: 18rem;
+    color: rgb(252, 195, 175);
+    /* background-color: white; */
+    overflow: hidden;
+    margin: 8rem 0 0 0;
+    text-align: right;
+    font-size: 50px;
+}
+.total-output{
+    position: absolute;
+    height: 4rem;
+    width: 18rem;
+    color: rgb(247, 93, 37);
+    /* background-color: white; */
+    overflow: hidden;
+    margin: 11rem 0 0 0;
+    text-align: right;
+    font-size: 50px;
+}
